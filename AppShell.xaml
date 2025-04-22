@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="MauiApp1_Ogrenci_G.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:MauiApp1_Ogrenci_G"
+    Title="MauiApp1_Ogrenci_G">
+
+    <ShellContent
+        Title="AnaSayfa"
+        ContentTemplate="{DataTemplate local:MainPage}"
+        Route="MainPage" />
+    <ShellContent
+        Title="Kredi Hesaplama"
+        ContentTemplate="{DataTemplate local:KrediHesaplamaSayfasi}"
+        Route="KrediHesaplamaSayfasi" />
+
+    <ShellContent
+        Title="VKİ Hesaplama"
+        ContentTemplate="{DataTemplate local:VKIHesaplamaSayfasi}"
+        Route="VKIHesaplamaSayfasi" />
+
+    <ShellContent
+        Title="Renk Seçici"
+        ContentTemplate="{DataTemplate local:RenkSeciciSayfasi}"
+        Route="RenkSeciciSayfasi" />
+
+</Shell>

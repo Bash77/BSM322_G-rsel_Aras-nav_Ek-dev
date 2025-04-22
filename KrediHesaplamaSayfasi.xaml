@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1_Ogrenci_G.KrediHesaplamaSayfasi"
+             Title="KrediHesaplamaSayfasi">
+
+
+     <VerticalStackLayout Padding="20" Spacing="15">
+
+        <!-- Kredi Türü Picker -->
+        <Label Text="Kredi Türü" />
+        <Picker x:Name="krediTuruPicker" Title="Kredi Türü Seçiniz">
+            <Picker.Items>
+                <x:String>İhtiyaç Kredisi</x:String>
+                <x:String>Taşıt Kredisi</x:String>
+                <x:String>Konut Kredisi</x:String>
+            </Picker.Items>
+        </Picker>
+
+        <!-- Kredi Tutarı -->
+        <Label Text="Kredi Tutarı" />
+        <Entry x:Name="krediTutariEntry" Placeholder="Kredi Tutarını Girin" Keyboard="Numeric" />
+
+        <!-- Faiz Oranı -->
+        <Label Text="Faiz Oranı (%)" />
+        <Entry x:Name="faizOraniEntry" Placeholder="Yıllık Faiz Oranı" Keyboard="Numeric" />
+
+        <!-- Vade (Ay) -->
+        <Label Text="Vade (Ay):" />
+        <Slider x:Name="vadeSlider"
+                    Minimum="6"
+                    Maximum="120"
+                    Value="12"
+                    ValueChanged="OnVadeSliderValueChanged" />
+        
+        <Label x:Name="vadeLabel" Text="Vade: 12 Ay" />
+
+        <!-- Hesapla Butonu -->
+        <Button Text="Hesapla" Clicked="OnHesaplaClicked" />
+
+        <!-- Sonuç Gösterimi -->
+        <Label x:Name="sonucLabel"
+                   Text="Sonuç burada gösterilecek."
+                   FontAttributes="Bold"
+                   TextColor="DarkGreen"
+                   HorizontalOptions="Center"
+                   Margin="10" />
+
+    </VerticalStackLayout>
+</ContentPage>

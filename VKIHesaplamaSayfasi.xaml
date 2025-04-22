@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1_Ogrenci_G.VKIHesaplamaSayfasi"
+             Title="VKIHesaplamaSayfasi">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+
+        <!-- Kilo (kg) -->
+        <Label Text="Kilo (kg)" />
+        <Slider x:Name="kiloSlider"
+                    Minimum="30"
+                    Maximum="150"
+                    Value="70"
+                    ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="kiloLabel" Text="Kilo: 70 kg" />
+
+        <!-- Boy (cm) -->
+        <Label Text="Boy (cm)" />
+        <Slider x:Name="boySlider"
+                    Minimum="100"
+                    Maximum="220"
+                    Value="170"
+                    ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="boyLabel" Text="Boy: 170 cm" />
+
+        <!-- VKİ Hesaplanan Değer -->
+        <Label x:Name="vkiLabel"
+                   Text="VKİ: 24.22"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   HorizontalOptions="Center"
+                   TextColor="DarkGreen" />
+
+    </VerticalStackLayout>
+
+</ContentPage>

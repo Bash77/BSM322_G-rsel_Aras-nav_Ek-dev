@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1_Ogrenci_G.RenkSeciciSayfasi"
+             Title="Renk Seçici"
+             Padding="10">
+
+    <VerticalStackLayout Spacing="20">
+
+        <!-- Kırmızı -->
+        <Label Text="Kırmızı (Red)" FontAttributes="Bold" />
+        <Slider x:Name="redSlider" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="redLabel" Text="Red: 0" />
+
+        <!-- Yeşil -->
+        <Label Text="Yeşil (Green)" FontAttributes="Bold" />
+        <Slider x:Name="greenSlider" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="greenLabel" Text="Green: 0" />
+
+        <!-- Mavi -->
+        <Label Text="Mavi (Blue)" FontAttributes="Bold" />
+        <Slider x:Name="blueSlider" Minimum="0" Maximum="255" ValueChanged="OnSliderValueChanged" />
+        <Label x:Name="blueLabel" Text="Blue: 0" />
+
+        <!-- Renk Kodu -->
+        <Label Text="Oluşturulan Renk Kodu:" FontAttributes="Bold" />
+        <Label x:Name="hexColorLabel"
+                   Text="#000000"
+                   FontAttributes="Bold"
+                   FontSize="Large"
+                   TextColor="Black"
+                   HorizontalOptions="Center" />
+
+        <!-- Butonlar -->
+        <HorizontalStackLayout Spacing="20" HorizontalOptions="Center">
+            <Button Text="Kopyala" Clicked="OnCopyClicked" />
+            <Button Text="Rastgele Renk" Clicked="OnRandomColorClicked" />
+        </HorizontalStackLayout>
+
+    </VerticalStackLayout>
+
+</ContentPage>
