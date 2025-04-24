@@ -1,3 +1,4 @@
+Hocam bilgisayarım sayıf olduğu için andriod emulator kaldırmıyor.
 ![Ekran görüntüsü 2025-04-22 190518](https://github.com/user-attachments/assets/94e2af5c-2fbc-4711-9656-7b5c2a0efa87)
 ![Ekran görüntüsü 2025-04-22 190603](https://github.com/user-attachments/assets/b9ca9d04-da67-4db5-b0e6-6ae97b1f29ea)
 ![Ekran görüntüsü 2025-04-22 190646](https://github.com/user-attachments/assets/8b7d1a4b-7c5a-4fe6-be7c-7201a56e207f)
